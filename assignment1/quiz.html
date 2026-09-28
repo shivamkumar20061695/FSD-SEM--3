@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSD Quiz System | Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-shell quiz-page">
+  <header class="quiz-header">
+    <a class="text-logo" href="index.html">FSD <span>Quiz System</span></a>
+    <div class="quiz-header-tools">
+      <div class="timer" aria-label="Time remaining"><span aria-hidden="true">&#9201;</span><span id="timer">10:00</span></div>
+      <div class="student-welcome"><span class="status-dot"></span><span id="welcome-name">Welcome</span></div>
+    </div>
+  </header>
+  <main class="quiz-layout">
+    <section class="quiz-identity">
+      <div>
+        <p class="eyebrow">Knowledge check</p>
+        <h1>Build your<br /><em>momentum.</em></h1>
+      </div>
+      <div class="identity-details">
+        <p>Roll No: <strong id="display-roll"></strong></p>
+        <p><strong id="display-branch"></strong> <span class="divider">|</span> <strong id="display-section"></strong> <span class="divider">|</span> <strong id="display-year"></strong></p>
+      </div>
+    </section>
+
+    <section class="quiz-card" aria-labelledby="question-label">
+      <div class="quiz-topline">
+        <span id="question-label">Question 1 of 10</span>
+        <span id="answered-count">0 answered</span>
+      </div>
+      <div class="progress-track" aria-label="Quiz progress"><div id="progress-bar" class="progress-bar"></div></div>
+      <div id="question-container" class="question-container"></div>
+      <div class="quiz-actions">
+        <button id="previous-button" class="secondary-button" type="button"><span aria-hidden="true">&#8592;</span> Previous</button>
+        <button id="next-button" class="primary-button" type="button">Next <span aria-hidden="true">&#8594;</span></button>
+        <button id="submit-button" class="primary-button is-hidden" type="button">Submit Quiz <span aria-hidden="true">&#10003;</span></button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

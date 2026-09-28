@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSD Quiz System | Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-shell result-page">
+  <header class="quiz-header">
+    <a class="text-logo" href="index.html">FSD <span>Quiz System</span></a>
+    <div class="result-badge">Final result</div>
+  </header>
+  <main class="result-layout">
+    <section class="result-hero">
+      <div class="success-icon" aria-hidden="true">&#10003;</div>
+      <p class="eyebrow">Assessment complete</p>
+      <h1>Quiz<br /><em>Completed!</em></h1>
+      <p class="result-message">A solid step forward. Review your score below and keep building.</p>
+    </section>
+    <section class="result-card" aria-labelledby="result-title">
+      <div class="result-card-heading">
+        <div><p class="eyebrow">Student report</p><h2 id="result-title">Your performance</h2></div>
+        <div class="score-ring"><strong id="score-value">0/10</strong><span>score</span></div>
+      </div>
+      <div class="student-summary">
+        <div><span>Name</span><strong id="result-name"></strong></div>
+        <div><span>Roll Number</span><strong id="result-roll"></strong></div>
+        <div><span>Branch</span><strong id="result-branch"></strong></div>
+        <div><span>Section</span><strong id="result-section"></strong></div>
+        <div><span>Year</span><strong id="result-year"></strong></div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric"><span>Percentage</span><strong id="percentage-value">0%</strong></div>
+        <div class="metric"><span>Correct Answers</span><strong id="correct-value">0</strong></div>
+        <div class="metric"><span>Incorrect Answers</span><strong id="incorrect-value">0</strong></div>
+      </div>
+      <div class="result-actions">
+        <button id="retake-button" class="primary-button" type="button">Retake Quiz <span aria-hidden="true">&#8635;</span></button>
+        <a class="secondary-button link-button" href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

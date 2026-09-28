@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSD Quiz System | Student Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-shell home-page">
+  <main class="home-layout">
+    <section class="intro-panel" aria-labelledby="page-title">
+      <div class="brand-mark">FSD <span>01</span></div>
+      <div class="intro-copy">
+        <p class="eyebrow">Full Stack Development</p>
+        <h1 id="page-title">FSD Quiz<br /><em>System</em></h1>
+        <p class="intro-text">Test the skills that bring the web to life, from semantic HTML to server-side logic.</p>
+      </div>
+      <div class="intro-footer"><span class="status-dot"></span> Ready when you are</div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="section-heading">
+        <p class="eyebrow">Student access</p>
+        <h2 id="form-title">Enter your details<br />to start the quiz</h2>
+      </div>
+      <form id="student-form" novalidate>
+        <div class="field-grid">
+          <label class="field field-wide" for="student-name">
+            <span>Student Name</span>
+            <input id="student-name" name="studentName" type="text" placeholder="e.g. Aanya Sharma" autocomplete="name" />
+          </label>
+          <label class="field" for="roll-number">
+            <span>Roll Number</span>
+            <input id="roll-number" name="rollNumber" type="text" placeholder="e.g. 23CSE1042" />
+          </label>
+          <label class="field" for="branch">
+            <span>Branch</span>
+            <select id="branch" name="branch">
+              <option value="">Select branch</option>
+              <option>CSE</option>
+              <option>CSE-DS</option>
+              <option>CSE-AIML</option>
+              <option>IT</option>
+              <option>ECE</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="field" for="section">
+            <span>Section</span>
+            <input id="section" name="section" type="text" placeholder="e.g. A" />
+          </label>
+          <label class="field" for="year">
+            <span>Year</span>
+            <select id="year" name="year">
+              <option value="">Select year</option>
+              <option>1st Year</option>
+              <option>2nd Year</option>
+              <option>3rd Year</option>
+              <option>4th Year</option>
+            </select>
+          </label>
+        </div>
+        <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+        <button class="primary-button" type="submit">Start Quiz <span aria-hidden="true">&#8594;</span></button>
+      </form>
+      <p class="privacy-note">Your details are saved only in this browser for the duration of your quiz.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
